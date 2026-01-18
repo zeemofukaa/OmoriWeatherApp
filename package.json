@@ -1,0 +1,19 @@
+{
+  "name": "electronjs",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electronmon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electronmon": "^2.0.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

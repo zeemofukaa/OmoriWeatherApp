@@ -1,0 +1,186 @@
+body {
+    margin: auto;
+    max-width: 38rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.weather-ui {
+    display: none;
+}
+
+.weather-ui.active {
+    display: block;
+}
+
+
+.weatherBG{
+    width:400px;
+    height:377px;
+    left: 0;
+    top: 83px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    border-style:hidden;
+    outline:none;
+    z-index: -10;
+}
+
+.basil{
+    height:70px;
+    left:328px;
+    top:162px;
+    position:absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.basil:hover{
+    animation-play-state: paused;
+    content: url('./assets/basil2.png');
+}
+
+.mari{
+    height:75px;
+    left:158px;
+    top:342px;
+    position:absolute;
+    animation: idle 1.4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.mari:hover{
+    animation-play-state: paused;
+    content: url('./assets/mariCute.png');
+}
+
+
+.kel{
+    height:53px;
+    /* width:72px; */
+    padding:0px;
+    left:38px;
+    top:350px;
+    position: absolute;
+    
+    cursor: pointer;
+}
+
+.kel:hover{
+    animation: headBop 1s ease-in-out infinite;
+    transition: transform 0.1s ease;
+}
+
+.group8
+{
+  filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  width:216px;
+  height:152.00003051757812px;
+  left: 185px;
+  top: 232px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  position:absolute;
+  margin-top: 4px;
+}
+
+.group6
+{
+  align-self:flex-start;
+  height: 56px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+.textBoxSmol
+{
+  height:56px;
+  position: relative;
+  top: 5px;
+}
+.temp
+{
+  color: #000000;
+  text-align: center;
+  padding: 0 9px;
+  font-size: 13px;
+  font-family: 'Pixelify Sans', monospace;
+  
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  width: 34px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;    /* horizontally center */
+  
+  align-items: center;        /* vertically center */
+}
+.group7
+{
+  align-self:flex-start;
+  height: 78px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  margin-top: 0px;
+}
+.textBox
+{
+  height:78px;
+  position: relative;
+  top:-20px;
+}
+.description
+{
+  color: #000000;
+  text-align: center;
+  padding: 1px 9px;
+  font-size: 13px;
+  font-family: 'Pixelify Sans', monospace;
+  position: absolute;
+  top: 60px;
+  left: 11px;
+  width: 120px;
+  height: 43px;
+
+  display: flex;
+  justify-content: center;    /* horizontally center */
+  align-items: center;        /* vertically center */
+}
+
+@keyframes idle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+@keyframes headBop {
+  0%, 100% {
+    content: url('./assets/kelOG.png');
+  }
+  
+  50% {
+    content: url('./assets/keldown2.png');
+  }
+}

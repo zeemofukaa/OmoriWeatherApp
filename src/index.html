@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css" id="homeStyle"/>
+    <link rel="stylesheet" href="weather-day.css" id="dayStyle"/>
+    <link rel="stylesheet" href="weather-night.css" id="nightStyle" disabled/>
+    
+    
+  </head>
+  <body>
+    <div class="header theme">
+      <div class="weather theme">Weather</div>
+      <div id="backBtn" class="backBtn theme">
+        <img class="door theme" src="./assets/door.png"/>
+      </div>
+      
+    </div>
+    
+    
+    <!--HOMEPAGE-->
+    <div id="homePage" class="page theme active">
+      <button id="startBtn" class="startBtn theme">Start</button>
+      <img id="bulbBtn" src="./assets/bulb.png" alt="Get Weather" class="bulb-button theme" />
+      <img class="hand1 hand theme" src="./assets/handRight1.png">
+      <img class="hand2 hand theme" src="./assets/handLeft1.png">
+      <img class="hand3 hand theme" src="./assets/handLeft1.png">
+      <img class="items theme" src="./assets/items.png">
+      <img class="omori theme" src="./assets/omori.png">
+      <img class="catto theme" src="./assets/catto.png">
+      <div id="result_">
+        <div id='group_8' class='group_8'>
+          <div id='group_6' class='group_6'>
+            <img id='textBoxSmol_' class='textBoxSmol_ theme' src='./assets/textBoxSmol.png'/>
+            <div id='dialogueSmol_' class='dialogueSmol_ theme'>...</div>
+          </div>
+          <div id='group_7' class='group_7'>
+            <img id='textBox_' class='textBox_ theme' src='./assets/textBox.png'/>
+            <div id='dialogue_' class='dialogue_ theme'>welcome to white space</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--WEATHERPAGE-->
+    <div id="weatherPage" class="page">
+
+      <!--DAY UI-->
+      <div id="dayUI" class="weather-ui active">
+        <input type="text" id="dayCityInput" class="cityInput" placeholder="Enter City" />
+        <img class="weatherBG" src="./assets/weather-dayBG.png" />
+        <!-- <div class="truth">
+          <img class="photo" src="./assets/f1.jpg"/>
+        </div> -->
+        <img class="basil" src="./assets/basil.png"/>
+        <img class="mari" src="./assets/mariOG.png"/>
+        <img class="kel" src="./assets/kelOG.png"/>
+        <div id="result">
+          <div id='group8' class='group8'>
+            <div id='group6' class='group6'>
+              <img id='textBoxSmol' class='textBoxSmol theme' src='./assets/textBoxSmol.png'/>
+              <div id='dayTemp' class='temp theme'>Hi!</div>
+            </div>
+            <div id='group7' class='group7'>
+              <img id='textBox' class='textBox theme' src='./assets/textBox.png'/>
+              <div id='dayDesc' class='description theme'>I'm Mari</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--NIGHT UI-->
+      <div id="nightUI" class="weather-ui">
+        <input type="text" id="nightCityInput" class="cityInput" placeholder="Enter City" />
+        <img class="weatherBG" src="./assets/weather-nightBG.png" />
+        <img class="signBoard" src="./assets/signBoard.png"/>
+        <div class="rally">
+          <img class="walk walk-omori" src="./assets/omoriSide.png">
+          <img class="walk walk-kel" src="./assets/kelSide.png">
+          <img class="walk walk-aubrey" src="./assets/aubreySide.png">
+          <img class="walk walk-hero" src="./assets/heroSide.png">
+        </div>
+        <div id="result">
+          <div id='group8' class='group8'>
+            <div id='group6' class='group6'>
+              <img id='textBoxSmol' class='textBoxSmol theme' src='./assets/textBoxSmol.png'/>
+              <div id='nightTemp' class='temp theme'>Hi!</div>
+            </div>
+            <div id='group7' class='group7'>
+              <img id='textBox' class='textBox theme' src='./assets/textBox.png'/>
+              <div id='nightDesc' class='description theme'>we're on walk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
