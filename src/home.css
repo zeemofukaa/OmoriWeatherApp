@@ -5,31 +5,6 @@ body {
   overflow: hidden;
 }
 
-.truth{
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.truth.active{
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  opacity: 1;
-  background-color: #000000;
-  transition: 0.3s;
-}
-
-.photo{
-  width: 250px;
-  display: flex;
-}
-
 .page {
   display: none;
 }
@@ -52,6 +27,7 @@ body {
   width:209px;
   display:flex;
   margin-left: 20px;
+  -webkit-app-region: no-drag;
 }
 
 #homePage{
@@ -77,6 +53,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
   padding: 2px 0;
+  -webkit-app-region: no-drag;
 }
 
 .audioBtn{
@@ -96,6 +73,7 @@ body {
 
 .header
 {
+  -webkit-app-region: drag;
   background-color:#000000;
   width:400px;
   height:83px;
