@@ -3,10 +3,28 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "electronmon ."
+    "start": "electronmon .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.omori.weather",
+    "productName": "Omori Weather",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icon.ico"
+    }
   },
   "devDependencies": {
     "electron": "^36.4.0",
+    "electron-builder": "^26.4.0",
     "electronmon": "^2.0.2"
   }
 }
