@@ -16,16 +16,39 @@
     
   </head>
   <body>
+    <!-- Header -->
     <div class="header theme">
       <div class="weather theme">Weather</div>
+      <div id="audioBtn" class="audioBtn theme">
+        <img class="knife theme" src="./assets/knife.png"/>
+      </div>
       <div id="backBtn" class="backBtn theme">
         <img class="door theme" src="./assets/door.png"/>
       </div>
-      
     </div>
+
+    <!-- Sound Menu Overlay -->
+    <div id="soundOverlay" class="overlay hidden theme">
+      <div class="sound-menu theme">
+        <div class="menu-title theme">Sound</div>
+
+        <div class="sound-row theme" id="toggleMusic">
+          <span>Music</span>
+          <span id="musicState">ON</span>
+        </div>
+
+        <div class="sound-row theme" id="toggleSfx">
+          <span>Effects</span>
+          <span id="sfxState">ON</span>
+        </div>
+
+        <div class="menu-close theme" id="closeSoundMenu">Close</div>
+      </div>
+    </div>
+
     
     
-    <!--HOMEPAGE-->
+    <!-- HOMEPAGE -->
     <div id="homePage" class="page theme active">
       <button id="startBtn" class="startBtn theme">Start</button>
       <img id="bulbBtn" src="./assets/bulb.png" alt="Get Weather" class="bulb-button theme" />
@@ -50,16 +73,13 @@
       
     </div>
 
-    <!--WEATHERPAGE-->
+    <!-- WEATHERPAGE -->
     <div id="weatherPage" class="page">
 
-      <!--DAY UI-->
+      <!-- DAY UI -->
       <div id="dayUI" class="weather-ui active">
         <input type="text" id="dayCityInput" class="cityInput" placeholder="Enter City" />
         <img class="weatherBG" src="./assets/weather-dayBG.png" />
-        <!-- <div class="truth">
-          <img class="photo" src="./assets/f1.jpg"/>
-        </div> -->
         <img class="basil" src="./assets/basil.png"/>
         <img class="mari" src="./assets/mariOG.png"/>
         <img class="kel" src="./assets/kelOG.png"/>
@@ -77,7 +97,7 @@
         </div>
       </div>
 
-      <!--NIGHT UI-->
+      <!-- NIGHT UI -->
       <div id="nightUI" class="weather-ui">
         <input type="text" id="nightCityInput" class="cityInput" placeholder="Enter City" />
         <img class="weatherBG" src="./assets/weather-nightBG.png" />

@@ -69,7 +69,6 @@ body {
 
 .kel{
     height:53px;
-    /* width:72px; */
     padding:0px;
     left:38px;
     top:350px;
@@ -129,9 +128,8 @@ body {
   height: 35px;
 
   display: flex;
-  justify-content: center;    /* horizontally center */
-  
-  align-items: center;        /* vertically center */
+  justify-content: center;
+  align-items: center;
 }
 .group7
 {
@@ -163,9 +161,11 @@ body {
   height: 43px;
 
   display: flex;
-  justify-content: center;    /* horizontally center */
-  align-items: center;        /* vertically center */
+  justify-content: center;
+  align-items: center;
 }
+
+/* -------------------------------- ANIMATIONS ---------------------------------------- */
 
 @keyframes idle {
   0%, 100% {

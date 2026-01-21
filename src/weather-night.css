@@ -146,9 +146,8 @@ z-index: 999;
   width: 34px;
   height: 35px;
   display: flex;
-  justify-content: center;    /* horizontally center */
-  
-  align-items: center;        /* vertically center */
+  justify-content: center;
+  align-items: center;
 }
 .group7
 {
@@ -180,11 +179,11 @@ z-index: 999;
   width: 120px;
   height: 43px;
   display: flex;
-  justify-content: center;    /* horizontally center */
-  align-items: center;        /* vertically center */
+  justify-content: center;
+  align-items: center;
 }
 
-
+/* ------------------------------------ ANIMATIONS ------------------------------------ */
 
 @keyframes walkAway {
     from{
