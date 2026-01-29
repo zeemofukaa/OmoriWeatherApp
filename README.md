@@ -1,4 +1,4 @@
-###🌫️ Omori Weather Space
+### 🌫️ Omori Weather Space
 
 A quiet, pixel-art desktop weather app inspired by the atmosphere of OMORI.
 Built with Electron, HTML, CSS, and JavaScript.
@@ -50,7 +50,7 @@ This is normal for Electron apps because Chromium is bundled.
 
 • Run Weather Space.exe from inside the folder
 
-❗ Do NOT move the .exe out of the folder
+❗ Do NOT move the .exe out of the folder.
 The app needs the other files to run correctly.
 
 
