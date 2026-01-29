@@ -48,7 +48,7 @@ This is normal for Electron apps because Chromium is bundled.
 
 • Open the extracted folder
 
-• Run weather-app.exe from inside the folder
+• Run Weather Space.exe from inside the folder
 
 ❗ Do NOT move the .exe out of the folder
 The app needs the other files to run correctly.
