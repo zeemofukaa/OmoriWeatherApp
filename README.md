@@ -1,4 +1,4 @@
-🌫️ **Omori Weather**
+###🌫️ Omori Weather Space
 
 A quiet, pixel-art desktop weather app inspired by the atmosphere of OMORI.
 Built with Electron, HTML, CSS, and JavaScript.
