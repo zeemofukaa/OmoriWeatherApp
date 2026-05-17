@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8g6qodoucyr"
+path="res://.godot/imported/Voicy_happy happy happy.mp3-ab39d7f478f369f54e61135ba7b095bf.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Voicy_happy happy happy.mp3"
+dest_files=["res://.godot/imported/Voicy_happy happy happy.mp3-ab39d7f478f369f54e61135ba7b095bf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,74 @@
+[gd_scene load_steps=15 format=3 uid="uid://dk8c327u2ltqu"]
+
+[ext_resource type="PackedScene" uid="uid://dwmidjcfj1g02" path="res://Scenes/axolotl.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://uri6be48nekc" path="res://Script/game.gd" id="1_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://dsgunspch25qw" path="res://Scenes/ui.tscn" id="2_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://cmdge1qxtjrf6" path="res://Assets/bg.png" id="3_1l0tm"]
+[ext_resource type="Texture2D" uid="uid://b6t4cd7cojyse" path="res://Assets/tomogatchi-shadow.png" id="4_i6g32"]
+[ext_resource type="Texture2D" uid="uid://dhfswr50wqnf7" path="res://Assets/screen.png" id="4_v158k"]
+[ext_resource type="Script" uid="uid://clk0mdo2hd71v" path="res://Scenes/device_shell.gd" id="6_1l0tm"]
+[ext_resource type="AudioStream" uid="uid://cbchmyxcthk03" path="res://Assets/Audio/sfx_eat.mp3" id="8_o5yvi"]
+[ext_resource type="AudioStream" uid="uid://mklnklmslhcw" path="res://Assets/Audio/sfx_play.mp3" id="9_rku1e"]
+[ext_resource type="AudioStream" uid="uid://btsv31kka5kaq" path="res://Assets/Audio/sfx_sleep.mp3" id="10_rfjv2"]
+[ext_resource type="AudioStream" uid="uid://c7hbfpxvgdspk" path="res://Assets/Audio/sfx_full.mp3" id="11_1phco"]
+[ext_resource type="AudioStream" uid="uid://2w85ktcro35t" path="res://Assets/Audio/sfx_squish.mp3" id="12_rku1e"]
+[ext_resource type="AudioStream" uid="uid://b6ygwvra4np7d" path="res://Assets/Audio/sfx_ded.mp3" id="13_rfjv2"]
+[ext_resource type="AudioStream" uid="uid://8r1ivqhlkaih" path="res://Assets/Audio/sfx_click.mp3" id="14_1phco"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_wrm1d")
+
+[node name="UI" parent="." instance=ExtResource("2_qxrlw")]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_1l0tm")
+
+[node name="DeviceShadow" type="TextureRect" parent="."]
+offset_left = 148.0
+offset_top = 266.0
+offset_right = 853.0
+offset_bottom = 971.0
+texture = ExtResource("4_i6g32")
+script = ExtResource("6_1l0tm")
+
+[node name="Screen" type="TextureRect" parent="."]
+offset_left = 352.0
+offset_top = 455.0
+offset_right = 666.0
+offset_bottom = 769.0
+texture = ExtResource("4_v158k")
+expand_mode = 1
+script = ExtResource("6_1l0tm")
+
+[node name="Axolotl" parent="." instance=ExtResource("1_ebmjs")]
+position = Vector2(500, 638)
+scale = Vector2(1.5, 1.5)
+
+[node name="BgMusic" type="AudioStreamPlayer2D" parent="."]
+
+[node name="SfxEat" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_o5yvi")
+
+[node name="SfxPlay" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_rku1e")
+
+[node name="SfxSleep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_rfjv2")
+
+[node name="SfxFull" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_1phco")
+
+[node name="SfxSquish" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_rku1e")
+
+[node name="SfxDed" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_rfjv2")
+
+[node name="SfxClick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_1phco")
+
+[connection signal="feed_pressed" from="UI" to="." method="_on_ui_feed"]
+[connection signal="play_pressed" from="UI" to="." method="_on_ui_play"]
+[connection signal="sleep_pressed" from="UI" to="." method="_on_ui_sleep"]
